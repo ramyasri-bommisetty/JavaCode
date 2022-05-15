@@ -1,0 +1,4 @@
+#  this is my git ignore file
+.git
+bin/
+.project
