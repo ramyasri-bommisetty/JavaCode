@@ -1,0 +1,32 @@
+
+
+keyword 
+  class 
+  package 
+  public
+  static
+  void 
+  main
+  import
+
+
+concepts
+  package is a folder that is maintained by java
+  access qualifier (same package classes vs different package )  
+   to use different package classes we need to import
+ java compilation -- command - javac
+ java class run -- comannd -- java 
+ class path -cp 
+   Where java classes are present. folder where we compile both non-packaged or packaged classes(byte code)
+
+-d option to save the class file into desired folder  
+
+Most common scenario
+   -- compile a java code that calls other classes from anywhere and save the compiled class in a specified directory
+
+   javac -d <<path to where we want classes to be stored>> -cp <<path where classes are stored>> pathToTheJavaFileToBeCompiled
+   javac -d bin -cp bin src\examples\Practise.java
+
+
+   -- run a java class from anywhere
+   java -cp <<path where classes are stored>> nameOfTheClass  

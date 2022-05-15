@@ -1,30 +1,27 @@
 package apps;
 
 import examples.Calculator;
-import examples.CalculatorSub;
-import examples.CalculatorMul;
-import examples.CalculatorDiv;
 
 
 public class CalculatorApp{
+
 	public static void main(String [] args){
+
 		Calculator aCalculator = new Calculator();
 		int sumReturned = aCalculator.add(5,3);
 		System.out.println("The sum is: "+sumReturned);
+		System.out.println();
 
-		CalculatorSub bCalculator = new CalculatorSub();
-		int subReturned = bCalculator.sub(6,2);
-		System.out.println("The sub is: "+subReturned);
+		int subReturned = aCalculator.subtract(6,4);
+		System.out.println("the sub is:"+subReturned);
+		System.out.println();
 
-		CalculatorMul cCalculator = new CalculatorMul();
-		int mulReturned = cCalculator.mul(10,3);
-		System.out.println("The mul is: "+mulReturned);
+		int mulReturned = aCalculator.multiply(5,5);
+		System.out.println("the mul is:"+mulReturned);
+		System.out.println();
 
-		CalculatorDiv dCalculator = new CalculatorDiv();
-		int divReturned = dCalculator.div(6,3);
-		System.out.println("The div is: "+divReturned);
-
-
-
+		int divReturned = aCalculator.divide(9,3);
+		System.out.println("the div is :"+divReturned);
+		System.out.println();
 	}
 }
